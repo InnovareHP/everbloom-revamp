@@ -15,7 +15,7 @@ export const HeroHeader = () => {
     <header>
       <nav
         data-state={menuState && "active"}
-        className="bg-background/90 fixed z-20 w-full border-b border-primary/10 backdrop-blur-3xl"
+        className="bg-background/90 block z-20 w-full border-b border-primary/10 backdrop-blur-3xl"
       >
         <div className="mx-auto max-w-6xl px-6 transition-all duration-300">
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
