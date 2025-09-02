@@ -9,13 +9,39 @@ import FrontPage from '@/components/front-page/front-page';
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<!-- Charset & Viewport -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	  
+		<!-- Basic Metadata -->
+		<title>Everbloom of Grand Rapids</title>
+		<meta name="description" content="Everbloom of Grand Rapids offers warm, professional assisted living in the quiet southeast portion of the Grand Rapids metro area." />
+		<meta name="author" content="Everbloom of Grand Rapids" />
+		<meta name="keywords" content="Assisted Living, Grand Rapids, Everbloom, Elderly Care, Senior Living, Care Home, Retirement Home" />
+	  
+		<!-- Favicon & Icons -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/icon/everbloom-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+	  
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://everbloomhome.org/" />
+		<meta property="og:title" content="Everbloom of Grand Rapids" />
+		<meta property="og:description" content="Located in the quiet southeast of Grand Rapids, Everbloom provides professional and compassionate care for your loved ones." />
+		<meta property="og:image" content="https://everbloomhome.org/image/amenity-2.jpg" />
+	  
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content="https://everbloomhome.org/" />
+		<meta name="twitter:title" content="Everbloom of Grand Rapids" />
+		<meta name="twitter:description" content="Located in the quiet southeast of Grand Rapids, Everbloom provides professional and compassionate care for your loved ones." />
+		<meta name="twitter:image" content="https://everbloomhome.org/image/amenity-2.jpg" />
+	  
+		<!-- Optional Generator Meta -->
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+	  </head>
+	  
 
-	
 	<FrontPage client:load />
 </html>

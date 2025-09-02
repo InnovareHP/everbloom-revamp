@@ -1,8 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { Ripple } from "@/components/ui/ripple";
 import { motion, type Variants } from "framer-motion";
+import ContactUsDialog from "../modal/contact-us";
+import TourOurHome from "../modal/tour-our-home";
 
 const container = {
   hidden: { opacity: 0, y: 12 },
@@ -45,7 +46,6 @@ export default function HeroSectionFrontPage() {
     >
       <Ripple className="sm:block hidden" />
 
-      {/* Floating accents (looping) */}
       <motion.div
         className="absolute top-20 left-16 z-10"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -67,7 +67,6 @@ export default function HeroSectionFrontPage() {
       <section className="relative">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid min-h-[90vh] items-center gap-10 md:grid-cols-2 py-16 md:py-24">
-            {/* TEXT */}
             <motion.div
               className="text-center md:text-left"
               variants={container as Variants}
@@ -89,9 +88,7 @@ export default function HeroSectionFrontPage() {
                 variants={item as Variants}
               >
                 Located in the quiet, accessible southeast portion of the Grand
-                Rapids metro area, EverBloom is a state-licensed,
-                wheelchair-accessible Adult Foster Care residence offering a
-                safe and supportive environment for adults who need extra care.
+                Rapids metro area.
               </motion.p>
 
               <motion.div
@@ -102,33 +99,15 @@ export default function HeroSectionFrontPage() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <Button
-                    asChild
-                    size="lg"
-                    className="px-8 py-3 text-base bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-all"
-                  >
-                    <a href="#link">
-                      <span className="text-nowrap">Tour Our Home</span>
-                    </a>
-                  </Button>
+                  <TourOurHome />
                 </motion.div>
 
                 <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="lg"
-                    className="px-8 py-3 text-base border-2 border-primary/30 text-primary hover:bg-primary/5 rounded-full shadow-sm hover:shadow-md transition-all"
-                  >
-                    <a href="#contact">
-                      <span className="text-nowrap">Contact Us</span>
-                    </a>
-                  </Button>
+                  <ContactUsDialog />
                 </motion.div>
               </motion.div>
             </motion.div>
 
-            {/* IMAGE + DECORATIVE CIRCLES */}
             <motion.div
               className="relative flex items-center justify-center"
               variants={popImage as Variants}
@@ -157,7 +136,6 @@ export default function HeroSectionFrontPage() {
                 }}
               />
 
-              {/* Image */}
               <motion.div
                 className="relative h-96 w-96 rounded-full overflow-hidden shadow-2xl border-4 border-primary/20 will-change-transform"
                 whileHover={{ rotate: -0.6, scale: 1.02 }}
