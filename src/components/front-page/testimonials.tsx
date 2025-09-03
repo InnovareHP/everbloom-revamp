@@ -9,8 +9,8 @@ export default function Testimonials() {
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <h2 className="text-4xl font-light lg:text-5xl text-foreground">
             Trusted by{" "}
-            <span className="text-primary font-medium">families</span>, loved by{" "}
-            <span className="text-primary font-medium">residents</span>
+            <span className="text-pink-400 font-medium">families</span>, loved
+            by <span className="text-pink-400 font-medium">residents</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             EverBloom is more than just a care facility. We create a nurturing
@@ -27,7 +27,7 @@ export default function Testimonials() {
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Star
                     key={star}
-                    className="h-5 w-5 text-primary fill-primary"
+                    className="h-4 w-4 text-pink-400 fill-pink-400"
                   />
                 ))}
               </div>
@@ -75,7 +75,7 @@ export default function Testimonials() {
                   {[1, 2, 3, 4, 5].map((star) => (
                     <Star
                       key={star}
-                      className="h-4 w-4 text-primary fill-primary"
+                      className="h-4 w-4 text-pink-400 fill-pink-400"
                     />
                   ))}
                 </div>
@@ -116,7 +116,7 @@ export default function Testimonials() {
                   {[1, 2, 3, 4, 5].map((star) => (
                     <Star
                       key={star}
-                      className="h-4 w-4 text-primary fill-primary"
+                      className="h-4 w-4 text-pink-400 fill-pink-400"
                     />
                   ))}
                 </div>

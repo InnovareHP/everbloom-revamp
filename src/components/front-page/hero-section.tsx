@@ -42,7 +42,7 @@ export default function HeroSectionFrontPage() {
   return (
     <div
       id="hero-section"
-      className="overflow-x-hidden bg-gradient-to-br from-background via-primary/5 to-primary/10 min-h-screen relative"
+      className="overflow-x-hidden bg-gradient-to-br from-background via-pink-100/60 to-primary/10 min-h-screen relative"
     >
       <Ripple className="sm:block hidden" />
 
@@ -79,7 +79,7 @@ export default function HeroSectionFrontPage() {
                 variants={item as Variants}
               >
                 <span className="block mb-2">EVERBLOOM</span>
-                <span className="block mb-2 text-primary font-medium">OF</span>
+                <span className="block mb-2 text-pink-400 font-medium">OF</span>
                 <span className="block">GRAND RAPIDS</span>
               </motion.h1>
 
@@ -142,7 +142,7 @@ export default function HeroSectionFrontPage() {
                 transition={{ type: "spring", stiffness: 120, damping: 12 }}
               >
                 <img
-                  src="https://www.agegracefullyamerica.com/wp-content/uploads/2019/05/bigstock-Nurse-taking-care-of-old-woman-262131685.jpg"
+                  src="/image/hero-section.webp"
                   alt="Loving caregiver embracing senior resident at EverBloom"
                   className="h-full w-full object-cover"
                 />

@@ -37,7 +37,7 @@ export default function AmenitiesSection() {
           whileInView="show"
           viewport={{ once: true, amount: 0.4 }}
         >
-          <h2 className="text-4xl md:text-5xl font-light text-primary tracking-wide">
+          <h2 className="text-4xl md:text-5xl font-light text-pink-400 tracking-wide">
             AMENITIES
           </h2>
         </motion.div>
@@ -112,7 +112,7 @@ export default function AmenitiesSection() {
             viewport={{ once: true, amount: 0.35 }}
           >
             <motion.h2
-              className="text-3xl md:text-4xl font-light text-primary leading-tight"
+              className="text-3xl md:text-4xl font-light text-pink-400 leading-tight"
               variants={fadeUp as Variants}
             >
               Our Private &amp; Semi-private Rooms

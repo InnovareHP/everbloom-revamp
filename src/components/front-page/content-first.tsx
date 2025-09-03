@@ -34,7 +34,8 @@ export default function ContentSection() {
           viewport={{ once: true, amount: 0.4 }}
         >
           The EverBloom experience brings together
-          <span className="text-primary font-medium"> compassionate care</span>.
+          <span className="text-pink-400 font-medium"> compassionate care</span>
+          .
         </motion.h2>
 
         <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
@@ -56,7 +57,7 @@ export default function ContentSection() {
                 className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent z-10"
               />
               <img
-                src="/image/content-first.png"
+                src="/image/content-first.jpg"
                 className="w-full h-full object-cover brightness-105"
                 alt="Comfortable, thoughtfully designed living space at EverBloom"
               />
