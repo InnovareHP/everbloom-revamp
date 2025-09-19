@@ -2,13 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
+    Dialog,
+    DialogClose,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,7 +20,7 @@ export default function ContactUsDialog() {
   const [success, setSuccess] = React.useState<null | boolean>(null);
   const formRef = React.useRef<HTMLFormElement>(null);
 
-  const endpoint = `https://formspree.io/f/xldnwybv`;
+  const endpoint = `https://formspree.io/f/meolykag`;
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
