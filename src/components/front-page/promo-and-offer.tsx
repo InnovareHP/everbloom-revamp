@@ -102,7 +102,7 @@ export default function PromosAndOffersSection() {
           viewport={{ once: true, amount: 0.4 }}
         >
           <h2 className="text-4xl md:text-5xl font-light text-primary-foreground tracking-wide">
-            PROMOS AND OFFERS
+          SERVICES OFFERED
           </h2>
         </motion.div>
 
